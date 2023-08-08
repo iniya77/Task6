@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="container">
+        <section class="image-gallery">
+            <div class="container">                
+                <div class="category-buttons text-center">
+                    <button class="btn btn-outline-primary category-button" data-category="all">All</button>
+                    <button class="btn btn-outline-primary category-button" data-category="bag">Bag</button>
+                    <button class="btn btn-outline-primary category-button" data-category="shoe">Shoe</button>
+                    <button class="btn btn-outline-primary category-button" data-category="watch">Watch</button>
+                    <button class="btn btn-outline-primary category-button" data-category="camera">Camera</button>
+                    <button class="btn btn-outline-primary category-button" data-category="headphone">Headphone
+                    </button>
+                </div>
+                <div class="row image-container">
+                    <!-- Images will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="selected-category mt-3 "></p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="image-details">
+                        <img src="" alt="" class="img-fluid selected-image">                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- External JS -->
+    <script src="gallery.js"></script>
+</body>
+</html>

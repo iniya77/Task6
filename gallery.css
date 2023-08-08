@@ -1,0 +1,36 @@
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-gallery {
+    padding: 40px 0;
+   
+}
+
+.category-buttons {
+    margin-bottom: 20px;
+}
+.category-button{
+    border-radius: 200px;
+    min-width:140px;
+    min-height:40px;
+    margin-bottom: 20px;
+}
+
+.category-button[data-category="all"] {
+    color: #007bff;
+}
+
+.category-button[data-category="all"].btn-primary {
+    color: white;
+    background-color: #007bff; 
+}
+.category-button[data-category="all"]:hover{
+    color:white;
+}
+
+
+
+
